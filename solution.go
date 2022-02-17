@@ -3,20 +3,20 @@ package square
 import "math"
 
 const (
-	sidesTriangle = 3
-	sidesSquare   = 4
-	sidesCircle   = 0
+	SidesTriangle = 3
+	SidesSquare   = 4
+	SidesCircle   = 0
 )
 
 type anotherInt int
 
 func CalcSquare(sideLen float64, sidesNum anotherInt) float64 {
 	switch sidesNum {
-	case sidesTriangle:
+	case SidesTriangle:
 		return triangleArea(sideLen)
-	case sidesSquare:
+	case SidesSquare:
 		return squareArea(sideLen)
-	case sidesCircle:
+	case SidesCircle:
 		return circleArea(sideLen)
 	default:
 		return 0
