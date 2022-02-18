@@ -17,7 +17,7 @@ func TestCalcSquare(t *testing.T) {
 	}{
 		{"square", args{sideLen: 10.0, sidesNum: 4}, 100.0},
 		{"triangle", args{sideLen: 2.0, sidesNum: 3}, math.Sqrt(3)},
-		{"circle", args{sideLen: 2.0, sidesNum: 0}, math.Pi},
+		{"circle", args{sideLen: 1.0, sidesNum: 0}, math.Pi},
 		{"wrong sides", args{sideLen: 10.0, sidesNum: 5}, 0.0},
 	}
 	for _, tt := range tests {

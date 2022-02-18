@@ -30,5 +30,5 @@ func squareArea(sideLen float64) float64 {
 	return math.Pow(sideLen, 2)
 }
 func circleArea(sideLen float64) float64 {
-	return math.Pi * math.Pow(sideLen, 2) / 4
+	return math.Pi * math.Pow(sideLen, 2)
 }
